@@ -25,7 +25,7 @@ class Complex:
         return Complex(abs(self.__re), abs(self.__im))
 
     def __eq__(self, other):
-        return Complex(self.__re == other.__re and self.__im == other.__im)
+        return Complex(self.__re == other.__re and self.__im == self.__im)
 
     def __ne__(self, other):
         return Complex(self.__re != other.__re)
@@ -34,8 +34,8 @@ class Complex:
         return str(self.__re) + str(self.__im)
 
 if __name__== '__main__':
-   c1 = Complex(2, 5)
-   c2 = Complex(3, 7)
+   c1 = Complex(1, 2)
+   c2 = Complex(3, 4)
    c3 = c1 + c2
    c4 = c1 - c2
    c5 = c1 * c2

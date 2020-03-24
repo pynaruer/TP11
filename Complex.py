@@ -25,7 +25,7 @@ class Complex:
         return (self.__re != other.__re) or (self.__im != other.__im)
 
     def __str__(self):
-        return (str(self.__re) + str(self.__im) + " + i")
+        return (str(self.__re) + str(self.__im) + "i")
 
 if __name__ == "__main__":
     c1 = Complex(1,2)

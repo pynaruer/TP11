@@ -28,10 +28,10 @@ class Rational:
     def __truediv__(self, other):
         return Rational(self.__num*other.__denum,self.__denum*other.__num)
 
-
-r1 = Rational(1,2)
-r2 = Rational(3,4)
-print(r1 + r2)
-print(r1 - r2)
-print(r1 * r2)
-print(r1 / r2)
+if __name__ == "__main__":
+    r1 = Rational(1,2)
+    r2 = Rational(3,4)
+    print(r1 + r2)
+    print(r1 - r2)
+    print(r1 * r2)
+    print(r1 / r2)

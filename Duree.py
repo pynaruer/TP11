@@ -13,7 +13,7 @@ class Duree:
         hour = self.__hour + other.__hour   + (minute//60)
         return Duree(hour,minute%60,second%60)
 
-heure1 = Duree(1,10,10)
-heure2 = Duree(2,20,20)
-print(heure1)
-print(heure1+heure2)
+h1 = Duree(1,10,10)
+h2 = Duree(2,20,20)
+print(h1)
+print(h1+h2)
